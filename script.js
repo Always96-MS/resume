@@ -1,5 +1,5 @@
 /* Configuration — set this to your GitHub Pages URL before deploying */
-const PAGE_URL = 'https://marcostefanelli.github.io/resume/';
+const PAGE_URL = 'https://always96-ms.github.io/resume/';
 
 /* =========================================================
    CONTENT
