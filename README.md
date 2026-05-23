@@ -4,7 +4,7 @@ Interactive online CV built as a self-contained static website, accessible via Q
 
 ## Live
 
-[https://github.com/Always96-MS/resume.git)
+https://always96-ms.github.io/resume/
 
 ## Stack
 
