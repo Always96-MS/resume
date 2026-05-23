@@ -4,9 +4,7 @@ Interactive online CV built as a self-contained static website, accessible via Q
 
 ## Live
 
-[https://marcostefanelli.github.io/resume/](https://marcostefanelli.github.io/resume/)
-
-*(Replace with the actual GitHub Pages URL after enabling it in repository settings.)*
+[https://github.com/Always96-MS/resume.git)
 
 ## Stack
 
