@@ -1,0 +1,193 @@
+<!-- © 2026 Marco Stefanelli — All rights reserved.
+     Code structure may be reused freely, content may not. -->
+<!DOCTYPE html>
+<html lang="it" class="lang-it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CV online di Marco Stefanelli, Data Scientist e GenAI Engineer con esperienza in analisi KPI, dashboard interattive e sviluppo di applicazioni AI." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://marcostefanelli.github.io/resume/" />
+  <meta property="og:title"       content="Marco Stefanelli — Data Scientist" />
+  <meta property="og:description" content="CV online di Marco Stefanelli, Data Scientist e GenAI Engineer con esperienza in analisi KPI, dashboard interattive e sviluppo di applicazioni AI." />
+  <meta property="og:locale"      content="it_IT" />
+  <title>Marco Stefanelli — Data Scientist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous" />
+</head>
+<body>
+
+  <!-- HEADER — floating glass capsule -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#top" class="logo" id="headerLogo">Marco Stefanelli</a>
+      <nav class="nav" id="mainNav" aria-label="Navigazione principale">
+        <a href="#experience"     class="nav__link" data-section="experience">Esperienze</a>
+        <a href="#education"      class="nav__link" data-section="education">Formazione</a>
+        <a href="#skills"         class="nav__link" data-section="skills">Competenze</a>
+        <a href="#projects"       class="nav__link" data-section="projects">Progetti</a>
+        <a href="#certifications" class="nav__link" data-section="certifications">Certificazioni</a>
+        <a href="#languages"      class="nav__link" data-section="languages">Lingue</a>
+        <a href="#interests"      class="nav__link" data-section="interests">Interessi</a>
+      </nav>
+      <!-- Segmented lang toggle -->
+      <div class="lang-toggle" role="group" aria-label="Cambia lingua" id="langToggleWrap">
+        <button class="lang-toggle__opt" id="langOptIT" aria-pressed="true">IT</button>
+        <button class="lang-toggle__opt" id="langOptEN" aria-pressed="false">EN</button>
+      </div>
+      <button class="hamburger" id="menuToggle" aria-label="Apri menu di navigazione" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="#experience"     class="nav__link" data-section="experience">Esperienze</a>
+    <a href="#education"      class="nav__link" data-section="education">Formazione</a>
+    <a href="#skills"         class="nav__link" data-section="skills">Competenze</a>
+    <a href="#projects"       class="nav__link" data-section="projects">Progetti</a>
+    <a href="#certifications" class="nav__link" data-section="certifications">Certificazioni</a>
+    <a href="#languages"      class="nav__link" data-section="languages">Lingue</a>
+    <a href="#interests"      class="nav__link" data-section="interests">Interessi</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="s-surface" id="top" aria-label="Presentazione">
+      <div class="wrap">
+        <div class="hero fade-in">
+          <div class="hero__text">
+            <p class="t-hero-kicker" id="heroKicker">Data Scientist · GenAI Engineer</p>
+            <h1 class="t-hero-name" id="heroName">Marco Stefanelli</h1>
+            <p class="hero__lead" id="heroBio">Data Analyst con esperienza pluriennale nel monitoring e analisi di KPI, sviluppo di dashboard interattive e formazione del personale.</p>
+            <div class="contact" id="heroContacts">
+              <a href="mailto:stefanelli51@gmail.com" class="contact__link" aria-label="Invia email">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+                stefanelli51@gmail.com
+              </a>
+              <a href="tel:+393514140010" class="contact__link" aria-label="Chiama">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +39 351 414 0010
+              </a>
+              <span class="contact__link">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 7-8 12-8 12s-8-5-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Lecce, Italy
+              </span>
+              <a href="https://www.linkedin.com/in/marco-stefanelli96" class="contact__link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://github.com/Always96-MS" class="contact__link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="hero__portrait-wrap" id="portraitWrap">
+            <div class="hero__portrait">
+              <img src="foto_profilo.png" alt="Foto profilo di Marco Stefanelli" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="s-bg" id="experience" aria-labelledby="experienceSectionTitle">
+      <div class="wrap fade-in">
+        <h2 class="t-section-title" id="experienceSectionTitle">Esperienze Lavorative</h2>
+        <div class="timeline" id="experienceList" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- PREVIOUS EXPERIENCE -->
+    <section class="s-bg s-secondary" id="previousExperience" aria-labelledby="previousExperienceSectionTitle">
+      <div class="wrap fade-in">
+        <h2 class="t-section-title" id="previousExperienceSectionTitle">Esperienze Precedenti</h2>
+        <div class="timeline" id="previousExperienceList" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="s-surface" id="education" aria-labelledby="educationSectionTitle">
+      <div class="wrap fade-in">
+        <h2 class="t-section-title" id="educationSectionTitle">Formazione</h2>
+        <div class="timeline" id="educationList" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="s-bg" id="skills" aria-labelledby="skillsSectionTitle">
+      <div class="wrap fade-in">
+        <h2 class="t-section-title" id="skillsSectionTitle">Competenze</h2>
+        <div class="skills" id="skillsGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="s-surface" id="projects" aria-labelledby="projectsSectionTitle">
+      <div class="wrap fade-in">
+        <h2 class="t-section-title" id="projectsSectionTitle">Progetti Personali</h2>
+        <div class="projects-grid" id="projectsList" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="s-bg" id="certifications" aria-labelledby="certificationsSectionTitle">
+      <div class="wrap fade-in">
+        <h2 class="t-section-title" id="certificationsSectionTitle">Certificazioni</h2>
+        <div id="certificationsList" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="s-surface" id="languages" aria-labelledby="languagesSectionTitle">
+      <div class="wrap fade-in">
+        <h2 class="t-section-title" id="languagesSectionTitle">Lingue</h2>
+        <ul class="lang-list" id="languagesList" aria-live="polite"></ul>
+      </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section class="s-bg" id="interests" aria-labelledby="interestsSectionTitle">
+      <div class="wrap fade-in">
+        <h2 class="t-section-title" id="interestsSectionTitle">Interessi e Attività</h2>
+        <div id="interestsList" aria-live="polite"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- DOWNLOAD / CONTACT -->
+  <section class="s-surface" id="contact">
+    <div class="wrap fade-in">
+      <h2 class="t-section-title" id="contactSectionTitle">Download</h2>
+      <div class="footer-inner">
+        <a href="CV_MS2026_IT.pdf" class="cta" id="downloadBtn" download aria-label="Scarica il CV in formato PDF">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Scarica CV PDF
+        </a>
+        <div class="qr-group">
+          <div class="qr-wrap" role="img" aria-label="QR code per aprire questa pagina" id="qrCodeWrap">
+            <div id="qrcode"></div>
+          </div>
+          <p class="qr-label" id="qrLabel">Scansiona per aprire questa pagina</p>
+        </div>
+      </div>
+      <p class="copyright" id="footerNote">© 2026 Marco Stefanelli</p>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+          integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSj9BSD06L9p6g6aKyCMKB3FqKBs1iFATNBdA=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
