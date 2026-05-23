@@ -930,25 +930,13 @@ function initPortraitTilt() {
 function initQRCode() {
   const container = document.getElementById('qrcode');
   if (!container) return;
-  if (typeof QRCode !== 'undefined') {
-    new QRCode(container, {
-      text: PAGE_URL,
-      width: 112,
-      height: 112,
-      colorDark: '#000000',
-      colorLight: '#ffffff',
-      correctLevel: QRCode.CorrectLevel.M,
-    });
-  } else {
-    const img = document.createElement('img');
-    img.src = 'https://api.qrserver.com/v1/create-qr-code/?size=112x112&data=' + encodeURIComponent(PAGE_URL);
-    img.alt = '';
-    img.width = 112;
-    img.height = 112;
-    img.style.borderRadius = '10px';
-    img.style.display = 'block';
-    container.appendChild(img);
-  }
+  const img = document.createElement('img');
+  img.src = 'qrcode.png';
+  img.alt = '';
+  img.width = 112;
+  img.height = 112;
+  img.style.display = 'block';
+  container.appendChild(img);
 }
 
 /* =========================================================
